@@ -1,20 +1,43 @@
-# tcss321-sorting
+# Sorting Algorithm Performance Benchmark
 
-TCSS 321 — Extra Labor: **Programming Project**  
-Author: **Yar Shkala**
+A Python benchmarking project comparing the runtime behavior of three classic **O(n²)** sorting algorithms.
 
-This repo compares three Θ(n²) sorting algorithms:
-- `bubble_sort` (with early-exit optimization)
-- `selection_sort`
-- `insertion_sort`
+## Algorithms
+
+- Bubble Sort with early-exit optimization
+- Selection Sort
+- Insertion Sort
+
+## What the Project Does
+
+The benchmark generates random integer arrays and measures each algorithm across input sizes from **50 to 1,000 elements**. Each size is tested **5 times**, and the median runtime is recorded to reduce the effect of timing noise.
+
+Running the benchmark creates:
+
+- `results.csv` — median runtime measurements
+- `sorting_times.png` — runtime comparison visualization
+
+## Technologies
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Algorithm Analysis
 
 ## Files
-- `algorithms.py` — sorting implementations.
-- `benchmark.py` — runs timings for n in {50..1000}, 5 trials each; saves `results.csv` and `sorting_times.png`.
-- `requirements.txt` — Python dependencies.
 
-## How to run
+- `algorithms.py` — implementations of Bubble, Selection, and Insertion Sort
+- `benchmark.py` — timing experiment and visualization workflow
+- `requirements.txt` — project dependencies
+
+## Run the Project
+
 ```bash
 pip install -r requirements.txt
 python benchmark.py
 ```
+
+## Skills Demonstrated
+
+Algorithms · Data Structures · Runtime Analysis · Benchmarking · Python · Data Visualization
